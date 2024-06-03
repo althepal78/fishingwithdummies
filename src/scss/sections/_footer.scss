@@ -1,0 +1,28 @@
+@use "../components/variables" as *;
+footer {
+  min-height: 5rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba($color: black, $alpha: 0.5);
+  color: white;
+  padding-top: 1rem;
+
+  margin-top: auto;
+
+  .youtube-channel {
+    background: rgba($color: black, $alpha: 0.5);
+   
+    a{
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      background: $color-GG;
+      background-clip: text;
+      font-size: larger;
+
+
+      &:hover{
+        -webkit-text-fill-color: wheat;
+      }
+    }
+  }
+}

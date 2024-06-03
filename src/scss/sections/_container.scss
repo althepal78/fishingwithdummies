@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+
+.fish-container {
+  padding: 0.8rem 0;
+  #hero {
+    width: 85%;
+    margin: 0 auto;
+    border: 5px solid #8b4513;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #3e2723;
+    text-align: center;
+
+    background: url("../images/scroll.jpg") no-repeat center center / cover;
+    text-align: center;
+    text-wrap: balance;
+
+    img {
+      padding-top: 0.5rem;
+      width: 18rem;
+    }
+
+    h1,
+    p {
+      text-wrap: balance;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1rem, 10vw, 5rem);
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: clamp(0.8rem, 5vw, 2rem);
+    }
+  }
+}

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+footer {
+  min-height: 5rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 1rem;
+  margin-top: auto;
+}
+footer .youtube-channel {
+  background: rgba(0, 0, 0, 0.5);
+}
+footer .youtube-channel a {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background: linear-gradient(to right, #4285f4, #db4437, #f4b400, #0f9d58);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: larger;
+}
+footer .youtube-channel a:hover {
+  -webkit-text-fill-color: wheat;
+}
+
+.fish-container {
+  padding: 0.8rem 0;
+}
+.fish-container #hero {
+  width: 85%;
+  margin: 0 auto;
+  border: 5px solid #8b4513;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #3e2723;
+  text-align: center;
+  background: url("../images/scroll.jpg") no-repeat center center/cover;
+  text-align: center;
+  text-wrap: balance;
+}
+.fish-container #hero img {
+  padding-top: 0.5rem;
+  width: 18rem;
+}
+.fish-container #hero h1,
+.fish-container #hero p {
+  text-wrap: balance;
+  text-align: center;
+}
+.fish-container #hero h1 {
+  font-size: clamp(1rem, 10vw, 5rem);
+  margin-bottom: 0.5em;
+}
+.fish-container #hero p {
+  font-size: clamp(0.8rem, 5vw, 2rem);
+}
+
+@media (width <= 650px) {
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header nav {
+    position: relative;
+    overflow-x: clip;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo {
+    width: 100%;
+    z-index: 30;
+  }
+  header nav .logo img {
+    padding-left: 3rem;
+    width: 12rem;
+    transition: filter 0.8s ease-in-out;
+  }
+  header nav .toggle-links {
+    z-index: 9;
+    color: white;
+    font-size: 3rem;
+    margin-right: 5rem;
+    cursor: pointer;
+  }
+  header nav .nav-links {
+    position: absolute;
+    background-color: black;
+    height: 100svh;
+    width: 100%;
+    top: 0;
+    padding: 10rem 0;
+    text-align: center;
+    transition: right 0.5s ease-in-out;
+  }
+  header nav .nav-links .link-item {
+    margin: 2rem 0;
+  }
+  header nav .nav-links .link-item a {
+    color: hsl(206, 95%, 32%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: relative;
+  }
+  header nav .nav-links .link-item a::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 5px;
+    left: 12px;
+  }
+  header nav .nav-links .link-item a::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 5px;
+    right: 12px;
+  }
+}
+@media (width > 650px) {
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0 10rem;
+  }
+  header nav .logo {
+    padding-left: 3rem;
+  }
+  header nav .logo #logo {
+    width: 10rem;
+    filter: grayscale(1) invert(1);
+    transition: all 0.5s ease-in-out;
+  }
+  header nav .logo #logo:hover {
+    filter: grayscale(0) invert(0) drop-shadow(8px 8px 12px #9d2d35);
+  }
+  header nav .toggle-links {
+    display: none;
+  }
+  header nav .nav-links {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-right: 2rem;
+  }
+  header nav .nav-links .link-item {
+    background-color: rgba(173, 216, 230, 0.4);
+    border-radius: 30px;
+  }
+  header nav .nav-links .link-item:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+  }
+  header nav .nav-links .link-item a {
+    width: clamp(0.9rem, 2vw, 2rem);
+    color: white;
+    font-size: clamp(0.5rem, 4vw, 2.5rem);
+    padding: 0 1rem;
+    height: 1rem;
+    position: relative;
+    width: 100%;
+    animation: floatUp;
+    transition: all 0.5s ease-in-out;
+  }
+  header nav .nav-links .link-item a:hover {
+    color: rgb(179, 35, 52);
+  }
+  header nav .nav-links .link-item a::before, header nav .nav-links .link-item a::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: hsla(0, 0%, 2%, 0.2);
+    border-radius: 100%;
+  }
+  header nav .nav-links .link-item a::before {
+    top: 0px;
+    left: 18px;
+  }
+  header nav .nav-links .link-item a::after {
+    bottom: 0px;
+    right: 20px;
+  }
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pirata One", cursive;
+  background: center/cover fixed no-repeat url("../images/bgfish.jpg");
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
