@@ -2,7 +2,7 @@
 
 .fish-container {
   padding: 0.8rem 0;
-  #hero {
+  section {
     width: 60%;
     margin: 0 auto;
     border: 5px solid #8b4513;
@@ -15,11 +15,6 @@
     background: url("../images/scroll.jpg") no-repeat center center / cover;
     text-align: center;
     text-wrap: balance;
-
-    img {
-      padding-top: 0.5rem;
-      width: 18rem;
-    }
 
     h1,
     p {
@@ -35,5 +30,7 @@
     p {
       font-size: clamp(0.8rem, 5vw, 2rem);
     }
+
+
   }
 }
