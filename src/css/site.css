@@ -54,10 +54,11 @@ footer .youtube-channel a:hover {
 
 @media (width <= 650px) {
   header {
-    width: 100%;
+    min-width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
   header nav {
+    min-width: 100%;
     position: relative;
     overflow-x: clip;
     display: flex;
@@ -70,61 +71,57 @@ footer .youtube-channel a:hover {
   }
   header nav .logo img {
     padding-left: 3rem;
-    width: 12rem;
-    transition: filter 0.8s ease-in-out;
+    width: clamp(8rem, 25vw, 20rem);
+    filter: grayscale(1) invert(1);
   }
   header nav .toggle-links {
     z-index: 9;
     color: white;
-    font-size: 3rem;
+    font-size: clamp(1rem, 10vw, 3rem);
     margin-right: 5rem;
+    font-family: system-ui;
     cursor: pointer;
   }
   header nav .nav-links {
+    min-width: 100%;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     height: 100svh;
-    width: 100%;
     top: 0;
     padding: 10rem 0;
     text-align: center;
     transition: right 0.5s ease-in-out;
   }
   header nav .nav-links .link-item {
-    margin: 2rem 0;
+    min-width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   header nav .nav-links .link-item a {
-    color: hsl(206, 95%, 32%);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: inherit;
-    transition: color 0.3s;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    position: relative;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 0.5rem;
   }
-  header nav .nav-links .link-item a::before {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 5px;
-    left: 12px;
+  .fish-container section h1 {
+    font-size: clamp(30px, 10vw, 50px);
   }
-  header nav .nav-links .link-item a::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
-    bottom: 5px;
-    right: 12px;
+  .fish-container section img {
+    width: clamp(5rem, 40vw, 15rem);
+  }
+  .fish-container #videos .videos {
+    max-width: 95%;
+  }
+  .fish-container #videos .videos .item {
+    width: clamp(100px, 60vw, 100%);
+  }
+  .fish-container #videos .videos .item iframe {
+    width: clamp(100px, 60vw, 100%);
   }
 }
 @media (width > 650px) {
@@ -158,15 +155,15 @@ footer .youtube-channel a:hover {
     gap: 1rem;
     padding: 0 1rem;
     margin-right: 2rem;
-    animation: floatUp 1s;
   }
   header nav .nav-links .link-item {
     background-color: rgba(173, 216, 230, 0.4);
-    border-radius: 30px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
   }
   header nav .nav-links .link-item:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 30px;
+    border-radius: 10px;
   }
   header nav .nav-links .link-item a {
     width: clamp(0.9rem, 2vw, 2rem);
@@ -176,11 +173,14 @@ footer .youtube-channel a:hover {
     height: 1rem;
     position: relative;
     width: 100%;
-    animation: floatUp;
-    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    transition: color 0.5s ease-in-out;
   }
   header nav .nav-links .link-item a:hover {
-    color: rgb(179, 35, 52);
+    color: #734002;
   }
   header nav .nav-links .link-item a::before, header nav .nav-links .link-item a::after {
     content: "";
@@ -197,14 +197,6 @@ footer .youtube-channel a:hover {
   header nav .nav-links .link-item a::after {
     bottom: 0px;
     right: 20px;
-  }
-  @keyframes floatUp {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(100%);
-    }
   }
   .fish-container section {
     margin-bottom: 2rem;
