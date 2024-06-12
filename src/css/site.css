@@ -108,6 +108,9 @@ footer .youtube-channel a:hover {
     width: 60%;
     border-radius: 0.5rem;
   }
+  .fish-container section {
+    margin-bottom: 0.4rem;
+  }
   .fish-container section h1 {
     font-size: clamp(30px, 10vw, 50px);
   }
@@ -210,7 +213,7 @@ footer .youtube-channel a:hover {
   }
   .fish-container section .videos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     overflow-x: clip;
     gap: 0.5rem;
   }
@@ -230,6 +233,29 @@ footer .youtube-channel a:hover {
     margin-left: 2rem;
   }
 }
+.goToTop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: larger;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  padding: 0.4rem;
+  line-height: 2em;
+  border-radius: 1000000000%;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
 *,
 *::before,
 *::after {
