@@ -134,13 +134,12 @@ footer .youtube-channel a:hover {
   }
   header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 0 10rem;
   }
   header nav .logo {
-    padding-left: 3rem;
+    padding-left: 5rem;
   }
   header nav .logo #logo {
     width: 10rem;
@@ -154,33 +153,29 @@ footer .youtube-channel a:hover {
     display: none;
   }
   header nav .nav-links {
-    display: flex;
-    gap: 1rem;
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0.5rem;
     margin-right: 2rem;
+    gap: 1rem;
   }
   header nav .nav-links .link-item {
-    background-color: rgba(173, 216, 230, 0.4);
-    border-radius: 10px;
-    transition: background-color 0.5s ease-in-out;
+    width: 100%;
   }
   header nav .nav-links .link-item:hover {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
   }
   header nav .nav-links .link-item a {
-    width: clamp(0.9rem, 2vw, 2rem);
+    background-color: rgba(173, 216, 230, 0.4);
+    border-radius: 10px;
     color: white;
-    font-size: clamp(0.5rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 4vw, 2.5rem);
     padding: 0 1rem;
-    height: 1rem;
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px;
-    transition: color 0.5s ease-in-out;
+    text-align: center;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
   }
   header nav .nav-links .link-item a:hover {
     color: #734002;
@@ -195,11 +190,11 @@ footer .youtube-channel a:hover {
   }
   header nav .nav-links .link-item a::before {
     top: 0px;
-    left: 18px;
+    left: 10px;
   }
   header nav .nav-links .link-item a::after {
     bottom: 0px;
-    right: 20px;
+    right: 10px;
   }
   .fish-container section {
     margin-bottom: 2rem;
