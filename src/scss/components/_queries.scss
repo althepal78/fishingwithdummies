@@ -123,7 +123,7 @@
 
         .link-item {
           width: 100%;
-        
+
           &:hover {
             background-color: rgba(255, 255, 255, 0.6);
             border-radius: 10px;
@@ -169,23 +169,46 @@
       }
     }
   }
-  .fish-container {
-    section {
-      margin-bottom: 2rem;
 
+  //end header start fish-container
+
+  .fish-container {
+    #hero {
       #mangrove-snapper {
         padding-top: 0.5rem;
         width: 18rem;
       }
-      #family {
-        width: clamp(10rem, 50svw, 50rem);
-      }
-      .videos {
+    }
+
+    #family {
+      width: clamp(10rem, 50svw, 50rem);
+    }
+
+    #youtube-links {
+      .video-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         overflow-x: clip;
         gap: 0.5rem;
+        .card-container {
+          background-color: transparent;
+          .card-title {
+            margin-bottom: 0.4rem;
+          }
+          .card-image {
+            a {
+              img {
+                width: 15rem;
+                background-color: black;
+              }
+            }
+          }
+        }
       }
+    }
+
+    section {
+      margin-bottom: 2rem;
 
       .paragraph-container {
         display: grid;

@@ -196,21 +196,31 @@ footer .youtube-channel a:hover {
     bottom: 0px;
     right: 10px;
   }
-  .fish-container section {
-    margin-bottom: 2rem;
-  }
-  .fish-container section #mangrove-snapper {
+  .fish-container #hero #mangrove-snapper {
     padding-top: 0.5rem;
     width: 18rem;
   }
-  .fish-container section #family {
+  .fish-container #family {
     width: clamp(10rem, 50svw, 50rem);
   }
-  .fish-container section .videos {
+  .fish-container #youtube-links .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     overflow-x: clip;
     gap: 0.5rem;
+  }
+  .fish-container #youtube-links .video-container .card-container {
+    background-color: transparent;
+  }
+  .fish-container #youtube-links .video-container .card-container .card-title {
+    margin-bottom: 0.4rem;
+  }
+  .fish-container #youtube-links .video-container .card-container .card-image a img {
+    width: 15rem;
+    background-color: black;
+  }
+  .fish-container section {
+    margin-bottom: 2rem;
   }
   .fish-container section .paragraph-container {
     display: grid;
