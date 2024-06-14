@@ -38,9 +38,6 @@ footer .youtube-channel a:hover {
   background: url("../images/scroll.jpg") no-repeat center center/cover;
   text-align: center;
   text-wrap: balance;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .fish-container section h1,
 .fish-container section p {
@@ -53,6 +50,18 @@ footer .youtube-channel a:hover {
 }
 .fish-container section p {
   font-size: clamp(0.8rem, 5vw, 2rem);
+}
+.fish-container section h1,
+.fish-container section h2,
+.fish-container section h3,
+.fish-container section h4,
+.fish-container section h5,
+.fish-container section h6,
+.fish-container section p,
+.fish-container section img {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 18%;
 }
 
 @keyframes appear {
