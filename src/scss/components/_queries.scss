@@ -99,7 +99,7 @@
       align-items: center;
       width: 100%;
       .logo {
-        padding-left: 5rem;
+        margin-left: 5rem;
         #logo {
           width: 10rem;
           filter: grayscale(1) invert(1);
@@ -118,7 +118,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0 0.5rem;
-        margin-right: 2rem;
+        margin-right: clamp(2rem, 10vw, 10rem);
         gap: 1rem;
 
         .link-item {

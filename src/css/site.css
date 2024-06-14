@@ -38,6 +38,9 @@ footer .youtube-channel a:hover {
   background: url("../images/scroll.jpg") no-repeat center center/cover;
   text-align: center;
   text-wrap: balance;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .fish-container section h1,
 .fish-container section p {
@@ -52,6 +55,18 @@ footer .youtube-channel a:hover {
   font-size: clamp(0.8rem, 5vw, 2rem);
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(100% 100% 0 0);
+            clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
 @media (width <= 650px) {
   header {
     min-width: 100%;
@@ -139,7 +154,7 @@ footer .youtube-channel a:hover {
     width: 100%;
   }
   header nav .logo {
-    padding-left: 5rem;
+    margin-left: 5rem;
   }
   header nav .logo #logo {
     width: 10rem;
@@ -156,7 +171,7 @@ footer .youtube-channel a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 0.5rem;
-    margin-right: 2rem;
+    margin-right: clamp(2rem, 10vw, 10rem);
     gap: 1rem;
   }
   header nav .nav-links .link-item {
