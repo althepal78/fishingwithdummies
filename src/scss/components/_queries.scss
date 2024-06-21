@@ -77,13 +77,6 @@
     #videos {
       .videos {
         max-width: 95%;
-        // overflow: hidden;
-        .item {
-          width: clamp(100px, 60vw, 100%);
-          iframe {
-            width: clamp(100px, 60vw, 100%);
-          }
-        }
       }
     }
   }
@@ -198,8 +191,14 @@
           .card-image {
             a {
               img {
-                width: 15rem;
+                display: block;
+                margin: 0 auto;
                 background-color: black;
+                min-height: 8rem;
+                max-height: 10rem;
+                width: 15rem;
+                object-fit: cover;
+                object-position: center;
               }
             }
           }

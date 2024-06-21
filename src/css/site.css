@@ -144,12 +144,6 @@ footer .youtube-channel a:hover {
   .fish-container #videos .videos {
     max-width: 95%;
   }
-  .fish-container #videos .videos .item {
-    width: clamp(100px, 60vw, 100%);
-  }
-  .fish-container #videos .videos .item iframe {
-    width: clamp(100px, 60vw, 100%);
-  }
 }
 @media (width > 650px) {
   header {
@@ -240,8 +234,16 @@ footer .youtube-channel a:hover {
     margin-bottom: 0.4rem;
   }
   .fish-container #youtube-links .video-container .card-container .card-image a img {
-    width: 15rem;
+    display: block;
+    margin: 0 auto;
     background-color: black;
+    min-height: 8rem;
+    max-height: 10rem;
+    width: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .fish-container section {
     margin-bottom: 2rem;
