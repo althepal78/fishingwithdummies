@@ -158,14 +158,50 @@ footer .youtube-channel a:hover {
   }
   header nav .logo {
     margin-left: 5rem;
+    position: relative;
+    overflow: hidden;
   }
   header nav .logo #logo {
     width: 10rem;
     filter: grayscale(1) invert(1);
-    transition: all 0.5s ease-in-out;
+    overflow: clip;
+    animation: upanddown 1s infinite;
   }
-  header nav .logo #logo:hover {
-    filter: grayscale(0) invert(0) drop-shadow(8px 8px 12px #9d2d35);
+  @keyframes upanddown {
+    0% {
+      transform: rotateZ(-6deg);
+    }
+    25% {
+      transform: rotateZ(-3deg);
+    }
+    50% {
+      transform: rotateZ(0deg);
+    }
+    75% {
+      transform: rotateZ(3deg);
+    }
+    100% {
+      transform: rotateZ(6deg);
+    }
+  }
+  header nav .logo .wave {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/wave.svg);
+    background-size: 100%;
+    background-repeat: repeat-x;
+    bottom: -20%;
+    left: 0;
+    animation: wave 10s linear infinite;
+  }
+  @keyframes wave {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: 600px;
+    }
   }
   header nav .toggle-links {
     display: none;
