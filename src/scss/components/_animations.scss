@@ -1,0 +1,21 @@
+@keyframes upanddown {
+    0% {
+        transform: rotateZ(6deg);
+      }
+      50%{
+        transform: rotateZ(-6deg);
+      }
+  
+      100% {
+        transform: rotateZ(6deg);
+      }
+  }
+
+  @keyframes wave {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: 600px;
+    }
+  }
