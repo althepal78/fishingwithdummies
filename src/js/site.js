@@ -11,16 +11,20 @@ function toggleHeader(e) {
     navLinks.style.right = "0px";
     toggle.textContent = "X";
     logo.style.filter = "grayscale(1) invert(1)";
+    document.body.style.overflow = "hidden"
   } else if (e.target === toggle && navLinks.style.right === "0px") {
     navLinks.style.right = "-100%";
     toggle.textContent = "☰";
     logo.style.filter = "";
+    document.body.style.overflow = "auto"
   }
 
   if (e.target !== toggle && navLinks.style.right === "0px") {
     navLinks.style.right = "-100%";
     toggle.textContent = "☰";
     logo.style.filter = "";
+    
+    document.body.style.overflow = "auto"
   }
 }
 

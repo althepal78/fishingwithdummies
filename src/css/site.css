@@ -38,6 +38,7 @@ footer .youtube-channel a:hover {
   background: url("../images/scroll.jpg") no-repeat center center/cover;
   text-align: center;
   text-wrap: balance;
+  z-index: -1;
 }
 .fish-container section h1,
 .fish-container section p {
@@ -88,10 +89,11 @@ footer .youtube-channel a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
   }
   header nav .logo {
     width: 100%;
-    z-index: 30;
+    z-index: 10;
   }
   header nav .logo img {
     padding-left: 3rem;
@@ -140,6 +142,9 @@ footer .youtube-channel a:hover {
   }
   .fish-container section img {
     width: clamp(5rem, 40vw, 15rem);
+  }
+  .fish-container #mangrove-snapper {
+    z-index: -1;
   }
   .fish-container #videos .videos {
     max-width: 95%;
