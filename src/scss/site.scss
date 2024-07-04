@@ -1,7 +1,7 @@
 @use "./sections/" as *;
-@use './components/queries' as *;
-@use './components/buttons' as *;
-@use './components/animations' as *;
+@use "./components/queries" as *;
+@use "./components/buttons" as *;
+@use "./components/animations" as *;
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 
 *,
@@ -20,7 +20,7 @@ html {
 body {
   font-family: "Pirata One", cursive; // Applying the pirate font to the scroll text
   background: center / cover fixed no-repeat url("../images/bgfish.webp");
-  width:100%;
+  width: 100%;
 }
 
 a {

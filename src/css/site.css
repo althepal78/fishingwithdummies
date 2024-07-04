@@ -78,54 +78,62 @@ footer .youtube-channel a:hover {
   }
 }
 @media (width <= 650px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
   header {
-    min-width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   header nav {
-    min-width: 100%;
-    position: relative;
-    overflow-x: clip;
+    justify-content: space-between;
+    padding: 0 2rem;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    font-size: x-large;
+    overflow: hidden;
   }
   header nav .logo {
-    width: 100%;
-    z-index: 10;
+    z-index: 4;
+    position: relative;
   }
-  header nav .logo img {
-    padding-left: 3rem;
-    width: clamp(8rem, 25vw, 20rem);
-    filter: grayscale(1) invert(1);
+  header nav .logo #logo {
+    width: 4rem;
+    animation: upanddown 2s infinite both;
+  }
+  header nav .logo .wave {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/wave.svg);
+    background-size: 100%;
+    background-repeat: repeat-x;
+    bottom: -20%;
+    left: 0;
+    animation: wave 10s linear infinite;
   }
   header nav .toggle-links {
-    z-index: 9;
+    z-index: 6;
     color: white;
-    font-size: clamp(1rem, 10vw, 3rem);
-    margin-right: 5rem;
-    font-family: system-ui;
-    cursor: pointer;
   }
   header nav .nav-links {
-    min-width: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.9);
     height: 100svh;
+    width: 100svw;
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    padding: 10rem 0;
-    text-align: center;
-    transition: right 0.5s ease-in-out;
+    right: -100%;
+    position: fixed;
+    padding: 4rem 0;
+    z-index: 2;
   }
-  header nav .nav-links .link-item {
-    min-width: 100%;
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  header nav .nav-links li {
+    margin: 2rem;
   }
-  header nav .nav-links .link-item a {
+  header nav .nav-links li a {
     font-size: xx-large;
     display: flex;
     justify-content: center;
@@ -160,6 +168,7 @@ footer .youtube-channel a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    overflow-x: hidden;
   }
   header nav .logo {
     margin-left: 5rem;
@@ -168,7 +177,6 @@ footer .youtube-channel a:hover {
   }
   header nav .logo img {
     width: 10rem;
-    filter: grayscale(1) invert(1);
     overflow: clip;
     animation: upanddown 2s infinite both;
   }
