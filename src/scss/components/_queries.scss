@@ -11,12 +11,12 @@
     background-color: rgba(0, 0, 0, 0.6);
 
     nav {
+      display: flex;
+      align-items: center;
       justify-content: space-between;
       padding: 0 2rem;
       text-align: center;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    
       font-size: x-large;
       overflow: hidden;
       .logo {

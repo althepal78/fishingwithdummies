@@ -33,8 +33,8 @@ function toggleHeader(e) {
 window.addEventListener("scroll", findTop);
 
 function findTop(e) {
-  console.log(e);
-  if (window.scrollY >= 20) {
+  // console.log(e);
+  if (window.scrollY > 2) {
     toTopButton.classList.add("show");
   } else {
     toTopButton.classList.remove("show");
