@@ -5,7 +5,7 @@ const fishContainer = document.querySelector("[data-fish]");
 const toTopButton = document.querySelector("[data-top-button]");
 const doc = document.body.style;
  
-
+console.log(navLinks.style.right , "yes hoe .right")
 document.addEventListener("click", toggleHeader);
 
 navLinks.style.right = "-100%";
@@ -35,7 +35,8 @@ function toggleHeader(e) {
 window.addEventListener("scroll", findTop);
 
 function findTop(e) {
-  if (window.scrollY >= 80) {
+  console.log(e)
+  if (window.scrollY >= 20) {
     toTopButton.classList.add("show");
   } else {
     toTopButton.classList.remove("show");

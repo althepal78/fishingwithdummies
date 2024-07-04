@@ -122,25 +122,25 @@ footer .youtube-channel a:hover {
   }
   header nav .nav-links {
     height: 100svh;
-    width: 100svw;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     right: -100%;
     position: fixed;
-    padding: 4rem 0;
     z-index: 2;
-  }
-  header nav .nav-links li {
-    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 6rem;
   }
   header nav .nav-links li a {
     font-size: xx-large;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
-    width: 60%;
-    border-radius: 0.5rem;
+    justify-content: center;
+    width: 10rem;
+    border-radius: 8px;
   }
   .fish-container section {
     margin-bottom: 0.4rem;
@@ -298,7 +298,7 @@ footer .youtube-channel a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   text-align: center;
   padding: 0.4rem;
