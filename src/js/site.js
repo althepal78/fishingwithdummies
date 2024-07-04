@@ -4,15 +4,13 @@ const logo = document.querySelector("[data-logo]");
 const fishContainer = document.querySelector("[data-fish]");
 const toTopButton = document.querySelector("[data-top-button]");
 const doc = document.body.style;
- 
-console.log(navLinks.style.right , "yes hoe .right")
+
 document.addEventListener("click", toggleHeader);
 
 navLinks.style.right = "-100%";
 function toggleHeader(e) {
- 
   if (e.target === toggleBtn && navLinks.style.right === "-100%") {
-    console.log('hello')
+    console.log("hello");
     navLinks.style.right = "0px";
     toggleBtn.textContent = "X";
 
@@ -35,7 +33,7 @@ function toggleHeader(e) {
 window.addEventListener("scroll", findTop);
 
 function findTop(e) {
-  console.log(e)
+  console.log(e);
   if (window.scrollY >= 20) {
     toTopButton.classList.add("show");
   } else {
