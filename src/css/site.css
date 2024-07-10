@@ -77,6 +77,48 @@ footer .youtube-channel a:hover {
             clip-path: inset(0 0 0 0);
   }
 }
+@keyframes upanddown {
+  0% {
+    transform: rotateZ(6deg);
+  }
+  50% {
+    transform: rotateZ(-6deg);
+  }
+  100% {
+    transform: rotateZ(6deg);
+  }
+}
+@keyframes wave {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 600px;
+  }
+}
+.goToTop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: larger;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  text-align: center;
+  padding: 0.4rem;
+  line-height: 2em;
+  border-radius: 1000000000%;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
 @media (width <= 650px) {
   body {
     position: relative;
@@ -285,48 +327,6 @@ footer .youtube-channel a:hover {
   .fish-container section p::before {
     content: "";
     margin-left: 2rem;
-  }
-}
-.goToTop {
-  display: none;
-  width: 50px;
-  height: 50px;
-  font-size: larger;
-  text-transform: capitalize;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-  position: fixed;
-  left: 20px;
-  bottom: 30px;
-  text-align: center;
-  padding: 0.4rem;
-  line-height: 2em;
-  border-radius: 1000000000%;
-  cursor: pointer;
-}
-
-.show {
-  display: block;
-}
-
-@keyframes upanddown {
-  0% {
-    transform: rotateZ(6deg);
-  }
-  50% {
-    transform: rotateZ(-6deg);
-  }
-  100% {
-    transform: rotateZ(6deg);
-  }
-}
-@keyframes wave {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: 600px;
   }
 }
 *,
