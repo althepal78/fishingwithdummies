@@ -195,9 +195,6 @@ footer .youtube-channel a:hover {
   .fish-container #mangrove-snapper {
     z-index: -1;
   }
-  .fish-container #videos .videos {
-    max-width: 95%;
-  }
 }
 @media (width > 650px) {
   header {
@@ -286,19 +283,19 @@ footer .youtube-channel a:hover {
   .fish-container #family {
     width: clamp(10rem, 50svw, 50rem);
   }
-  .fish-container #youtube-links .video-container {
+  .fish-container #youtube-links .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     overflow-x: clip;
     gap: 0.5rem;
   }
-  .fish-container #youtube-links .video-container .card-container {
+  .fish-container #youtube-links .card-container .card {
     background-color: transparent;
   }
-  .fish-container #youtube-links .video-container .card-container .card-title {
+  .fish-container #youtube-links .card-container .card .card-title {
     margin-bottom: 0.4rem;
   }
-  .fish-container #youtube-links .video-container .card-container .card-image a img {
+  .fish-container #youtube-links .card-container .card .card-image a img {
     display: block;
     margin: 0 auto;
     background-color: black;

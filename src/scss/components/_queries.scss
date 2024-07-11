@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 
 @media (width <=650px) {
   body {
@@ -16,7 +16,7 @@
       justify-content: space-between;
       padding: 0 2rem;
       text-align: center;
-    
+
       font-size: x-large;
       overflow: hidden;
       .logo {
@@ -52,23 +52,22 @@
         background-color: rgba(0, 0, 0, 0.8);
         top: 0;
         right: -100%;
-        position: fixed;        
+        position: fixed;
         z-index: 2;
 
         display: flex;
         flex-direction: column;
-        gap:2rem;
+        gap: 2rem;
         align-items: center;
         padding-top: 6rem;
         li {
-          
           a {
             font-size: xx-large;
             display: flex;
             background-color: #fff;
             justify-content: center;
             width: 10rem;
-            border-radius: 8px;            
+            border-radius: 8px;
           }
         }
       }
@@ -88,10 +87,8 @@
     #mangrove-snapper {
       z-index: -1;
     }
-    #videos {
-      .videos {
-        max-width: 95%;
-      }
+    #youtube-links {
+     
     }
   }
 }
@@ -203,12 +200,12 @@
     }
 
     #youtube-links {
-      .video-container {
+      .card-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         overflow-x: clip;
         gap: 0.5rem;
-        .card-container {
+        .card {
           background-color: transparent;
           .card-title {
             margin-bottom: 0.4rem;
