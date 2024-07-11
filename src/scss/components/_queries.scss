@@ -88,7 +88,6 @@
       z-index: -1;
     }
     #youtube-links {
-     
     }
   }
 }
@@ -202,27 +201,19 @@
     #youtube-links {
       .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
         overflow-x: clip;
+        justify-content: center;
         gap: 0.5rem;
+
         .card {
-          background-color: transparent;
           .card-title {
-            margin-bottom: 0.4rem;
+            font-size:  1.2rem;
           }
-          .card-image {
-            a {
-              img {
-                display: block;
-                margin: 0 auto;
-                background-color: black;
-                min-height: 8rem;
-                max-height: 10rem;
-                width: 15rem;
-                object-fit: cover;
-                object-position: center;
-              }
-            }
+          a {
+           img{
+            width:300px;
+           }
           }
         }
       }

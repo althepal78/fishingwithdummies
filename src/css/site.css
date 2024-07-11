@@ -27,7 +27,7 @@ footer .youtube-channel a:hover {
   padding: 0.8rem 0;
 }
 .fish-container section {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   border: 5px solid #8b4513;
   border-radius: 15px;
@@ -285,27 +285,16 @@ footer .youtube-channel a:hover {
   }
   .fish-container #youtube-links .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
     overflow-x: clip;
+    justify-content: center;
     gap: 0.5rem;
   }
-  .fish-container #youtube-links .card-container .card {
-    background-color: transparent;
-  }
   .fish-container #youtube-links .card-container .card .card-title {
-    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
   }
-  .fish-container #youtube-links .card-container .card .card-image a img {
-    display: block;
-    margin: 0 auto;
-    background-color: black;
-    min-height: 8rem;
-    max-height: 10rem;
-    width: 15rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+  .fish-container #youtube-links .card-container .card a img {
+    width: 300px;
   }
   .fish-container section {
     margin-bottom: 2rem;
