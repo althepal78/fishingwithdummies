@@ -119,7 +119,7 @@ footer .youtube-channel a:hover {
   display: block;
 }
 
-@media (width <= 650px) {
+@media (width <= 730px) {
   body {
     position: relative;
     overflow-x: clip;
@@ -198,7 +198,7 @@ footer .youtube-channel a:hover {
     z-index: -1;
   }
 }
-@media (width > 650px) {
+@media (width > 730px) {
   header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);

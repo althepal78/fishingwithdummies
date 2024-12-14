@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-@media (width <=650px) {
+@media (width <=730px) {
   body {
     position: relative;
     overflow-x: clip;
@@ -94,7 +94,7 @@
   }
 }
 
-@media (width > 650px) {
+@media (width > 730px) {
   header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
