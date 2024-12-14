@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="I, ALTHEPAL78, am relearning how to fish after many years. I used to fish with my father but haven't done so since childhood. Starting from scratch, I've been learning from various online channels, though none are local to Spring Hill, Florida. I'll be fishing around Clearwater, possibly Saint Petersburg, and Tampa. My boat is an old cruiser, not specifically for fishing, so I hope it doesn't cause issues. I'll have company and will be testing out online fishing techniques, though they might not always be effective locally."
+      content="As Captain Al, I'm getting back into fishing after many years away. I learned to fish with my father as a child, but it's been a long time since then. I'm starting over, picking up tips from various online sources, though none are specific to Spring Hill, Florida. I plan to fish around Clearwater, possibly St. Petersburg, and Tampa. My boat is an old cruiser, not built for fishing, so I'm hoping it won't cause any issues. I'll have company on board and will be trying out online fishing techniques, though they might not always work perfectly for the local waters."
     />
     <meta
       name="keywords"
-      content="fishing, relearning fishing, fishing techniques, Spring Hill fishing, Clearwater fishing, Saint Petersburg fishing, Tampa fishing, fishing with cruiser boat, online fishing tips, Florida fishing spots"
+      content="#FishingLife, #CatchAndRelease, #FishingDaily, #FishOn, #GoneFishing, #FishingAddict, #FishingTrip, #AnglerLife, #FishingAdventure, #TightLines, #FishingCommunity, #FishingTime, #FreshwaterFishing, #SaltwaterFishing, #BassFishing, #FlyFishing, #FishingLove, #FishingFun, #FishingGear, #FishingSeason, #FishingVibes, #FishOfTheDay"
     />
     <meta name="author" content="Albert Cardona" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +37,7 @@
             <div class="wave"></div>
           </a>
         </div>
-        <div data-toggle-btn class="toggle-links">&#9776;</div>
+        <div data-toggle-btn class="toggle-links">☰</div>
         <ul data-nav-links class="nav-links">
           <li class="link-item"><a href="#hero">Home </a></li>
           <li class="link-item"><a href="#about">About </a></li>
@@ -99,42 +99,7 @@
 
       <section id="youtube-links">
         <h1>Videos</h1>
-        <div data-card-container="" class="card-container">
-          <div class="card">
-            <h2 class="card-title">Hernando Beach ramp I am out</h2>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=PBRMpSbJgFY"
-              ><img src="https://i.ytimg.com/vi/PBRMpSbJgFY/hqdefault.jpg"
-            /></a>
-          </div>
-          <div class="card">
-            <h2 class="card-title">
-              Fishing With Dummies and this Lonely Captain
-            </h2>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=IDQl774kiHI"
-              ><img src="https://i.ytimg.com/vi/IDQl774kiHI/hqdefault.jpg"
-            /></a>
-          </div>
-          <div class="card">
-            <h2 class="card-title">Out With The Boys</h2>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=KCioG5wLl-E"
-              ><img src="https://i.ytimg.com/vi/KCioG5wLl-E/hqdefault.jpg"
-            /></a>
-          </div>
-          <div class="card">
-            <h2 class="card-title">Fishing With Dummies First Video</h2>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=wsi0_MLwXrw"
-              ><img src="https://i.ytimg.com/vi/wsi0_MLwXrw/hqdefault.jpg"
-            /></a>
-          </div>
-        </div>
+        <div data-card-container class="card-container"></div>
         <!-- end of card container -->
       </section>
     </div>

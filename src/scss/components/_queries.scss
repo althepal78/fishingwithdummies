@@ -3,7 +3,7 @@
 @media (width <=650px) {
   body {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   header {
     width: 100%;
@@ -44,6 +44,7 @@
       .toggle-links {
         z-index: 6;
         color: white;
+        cursor: pointer;
       }
 
       .nav-links {
@@ -60,6 +61,8 @@
         gap: 2rem;
         align-items: center;
         padding-top: 6rem;
+
+        transition: all .3s ease-in-out;
         li {
           a {
             font-size: xx-large;

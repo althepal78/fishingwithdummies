@@ -122,7 +122,7 @@ footer .youtube-channel a:hover {
 @media (width <= 650px) {
   body {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   header {
     width: 100%;
@@ -160,6 +160,7 @@ footer .youtube-channel a:hover {
   header nav .toggle-links {
     z-index: 6;
     color: white;
+    cursor: pointer;
   }
   header nav .nav-links {
     height: 100svh;
@@ -174,6 +175,7 @@ footer .youtube-channel a:hover {
     gap: 2rem;
     align-items: center;
     padding-top: 6rem;
+    transition: all 0.3s ease-in-out;
   }
   header nav .nav-links li a {
     font-size: xx-large;
@@ -320,6 +322,7 @@ footer .youtube-channel a:hover {
 *::after {
   padding: 0;
   margin: 0;
+  scrollbar-gutter: stable;
   box-sizing: border-box;
 }
 
