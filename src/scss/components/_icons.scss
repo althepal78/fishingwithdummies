@@ -1,0 +1,63 @@
+.site-footer {
+  background-color: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.site-footer h2 {
+  font-size: clamp(1rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+  color: var(--hover-color, #ea6cea);
+}
+
+.site-footer p {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/* Layout: icons in a row with space */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+/* Base style — show original color */
+.footer-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-links li a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* On hover — grow + chrome filter */
+.footer-links li a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(100%) brightness(1.5) contrast(1.2);
+}
+
+.icon-pack {
+  background-size: 2rem;
+  background-color: rgba(0, 0, 0, 1);
+  font-size: xx-large;
+
+  .icon-credit {
+    color: rgb(14, 255, 211);
+
+    &:hover{
+        color: yellow;
+    }
+  }
+}

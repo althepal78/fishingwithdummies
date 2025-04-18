@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 footer {
   min-height: 5rem;
@@ -236,9 +237,9 @@ footer .youtube-channel a:hover {
   }
   header nav .nav-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 0 0.5rem;
-    margin-right: clamp(2rem, 10vw, 10rem);
+    margin-right: clamp(0.5rem, 2vw, 10rem);
     gap: 1rem;
   }
   header nav .nav-links .link-item {
@@ -252,7 +253,7 @@ footer .youtube-channel a:hover {
     background-color: rgba(173, 216, 230, 0.4);
     border-radius: 10px;
     color: white;
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     padding: 0 1rem;
     position: relative;
     width: 100%;
@@ -317,6 +318,68 @@ footer .youtube-channel a:hover {
     margin-left: 2rem;
   }
 }
+.site-footer {
+  background-color: #111;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.site-footer h2 {
+  font-size: clamp(1rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+  color: var(--hover-color, #ea6cea);
+}
+
+.site-footer p {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/* Layout: icons in a row with space */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+/* Base style — show original color */
+.footer-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-links li a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* On hover — grow + chrome filter */
+.footer-links li a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(100%) brightness(1.5) contrast(1.2);
+}
+
+.icon-pack {
+  background-size: 2rem;
+  background-color: rgb(0, 0, 0);
+  font-size: xx-large;
+}
+.icon-pack .icon-credit {
+  color: rgb(14, 255, 211);
+}
+.icon-pack .icon-credit:hover {
+  color: yellow;
+}
+
 *,
 *::before,
 *::after {
