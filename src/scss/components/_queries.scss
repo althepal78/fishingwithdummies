@@ -62,7 +62,7 @@
         align-items: center;
         padding-top: 6rem;
 
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         li {
           a {
             font-size: xx-large;
@@ -83,14 +83,18 @@
       h1 {
         font-size: clamp(30px, 10vw, 50px);
       }
-      img {
-        width: clamp(5rem, 40vw, 15rem);
+      #family, img   {
+        width: clamp(15rem, 50svw, 50rem);
       }
+  
+      #kingdavid{
+         width: 100%;
+      }
+  
     }
     #mangrove-snapper {
       z-index: -1;
     }
-   
   }
 }
 
@@ -134,7 +138,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding: 0 0.5rem;
-        margin-right: clamp(.5rem, 2vw, 10rem);
+        margin-right: clamp(0.5rem, 2vw, 10rem);
         gap: 1rem;
 
         .link-item {
@@ -196,9 +200,19 @@
       }
     }
 
-    #family {
+    #family   {
       width: clamp(10rem, 50svw, 50rem);
     }
+
+    #kingdavid{
+       width: 100%;
+    }
+
+    .pd{
+      text-align: center;
+      margin-inline: auto;
+    }
+   
 
     #youtube-links {
       .card-container {

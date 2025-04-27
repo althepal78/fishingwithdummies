@@ -192,8 +192,11 @@ footer .youtube-channel a:hover {
   .fish-container section h1 {
     font-size: clamp(30px, 10vw, 50px);
   }
-  .fish-container section img {
-    width: clamp(5rem, 40vw, 15rem);
+  .fish-container section #family, .fish-container section img {
+    width: clamp(15rem, 50svw, 50rem);
+  }
+  .fish-container section #kingdavid {
+    width: 100%;
   }
   .fish-container #mangrove-snapper {
     z-index: -1;
@@ -285,6 +288,13 @@ footer .youtube-channel a:hover {
   }
   .fish-container #family {
     width: clamp(10rem, 50svw, 50rem);
+  }
+  .fish-container #kingdavid {
+    width: 100%;
+  }
+  .fish-container .pd {
+    text-align: center;
+    margin-inline: auto;
   }
   .fish-container #youtube-links .card-container {
     display: grid;

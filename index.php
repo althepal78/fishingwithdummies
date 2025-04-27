@@ -56,8 +56,9 @@
       <h1>Welcome to Fishing with Dummies!</h1>
       <div class="paragraph-container">
         <p>
-          Hello, fellow anglers! I'm Al, your guide on the journey of learning
-          to fish with confidence. As a beginner myself, I understand the
+          Hello, fellow anglers! I'm Captain AL, your favorite captain without a license.
+          My goal is to be your guide on the journey of learning to fish with confidence.
+          As a beginner myself, I understand the
           challenges and excitement of starting out in the world of fishing.
           Join me on this adventure as we explore the basics, learn new
           techniques, and share our experiences. Whether you're a seasoned pro
@@ -91,6 +92,8 @@
           joy lies in fishing and exploring the waters on my boat.
         </p>
         <p>Thank you for joining me on this adventure. Tight lines!</p>
+        <p class="pd">King Baby David owning his newest boat, the new captain of the this vessel lol</p>
+        <img class="pd" id="kingdavid" src="./src/images/king baby david.jpg" alt="King Baby David">
       </div>
     </section>
     <!-- End About -->
